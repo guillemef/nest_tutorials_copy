@@ -6,13 +6,53 @@ This material is publicly available at https://github.com/Lascon2026/nest_tutori
 |------------------------------------------------------------|
 | :zap:  **Do not clone this repo directly.** |
 
-## Working with the examples here
+##  Sign up to EBRAINS
+
+- Register on https://ebrains.eu/sign-up
+- If you use your institutional email address, registration should be
+  instantaneous, provided your institution is known to EBRAINS
+- Contact me in case of difficulty
+
+## Working with NEST Desktop
+
+### NEST Desktop on EBRAINS
+  
+- Use NEST Desktop at https://ebrains.eu/service/nest-desktop
+
+### NEST Desktop on your own computer
+
+- Assumes you use VM or have LASCON conda/mamba setup
+- In terminal run
+```bash
+export NEST_SERVER_DISABLE_AUTH=1
+nest-server start -d
+nest-desktop start
+```
+- Open URL displayed by the last line in your browser
+- To shut down
+  - stop `nest-desktop` with `Ctrl-C`
+  - then run `nest-server stop`
+
+### How NEST Desktop Stores Models
+
+- NEST Desktop stores models as *cookies in your browser*
+- Models will disappear when your browser cleans up cookies
+
+| :zap: Always **export your models** to disk for safe storage |
+|--------------------------------------------------------------|
+
+
+## Working with the examples here on EBRAINS (or your computer)
 
 1. Fork this repository
-1. Clone the repository to your virtual machine at https://lab.ebrains.eu
+1. Clone the repository to your virtual machine at
+   https://lab.ebrains.eu
+1. Create a fine-grained Github access token for you repository
+   - See Github_FinegrainedToken.pdf in this repo
+   - Also https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 1. Commit **and push** all changes you make at https://lab.ebrains.eu
 
-| :zap:  Material not pushed from EBRAINS back to Gitlab may **disappear overnight** |
+| :zap:  Material not pushed from EBRAINS back to Github may **disappear overnight** |
 |------------------------------------------------------------------------------------|
 
 
@@ -33,8 +73,6 @@ This material is publicly available at https://github.com/Lascon2026/nest_tutori
    "Git" logo in the left margin. There you also find tools for
    managing Git.
 1. **Always commit and push at the end of a session.**
-1. **Pushing does not work at the moment, EBRAINS support is working
-   on it. You need to manually download your files in the meantime.**
 1. EBRAINS will from time to time shut down inactive VMs. **Any
    material in your VM home directory will then be lost**—remember to
    push!
@@ -54,10 +92,3 @@ Please **do not** create VMs on both sites simultaneously to avoid
 resource waste!
 
 
-## How NEST Desktop Stores Models
-
-- NEST Desktop stores models as *cookies in your browser*
-- Models will disappear when your browser cleans up cookies
-
-| :zap: Always **export your models** to disk for safe storage |
-|--------------------------------------------------------------|
