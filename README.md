@@ -17,7 +17,8 @@ This material is publicly available at https://github.com/Lascon2026/nest_tutori
 
 ### NEST Desktop on EBRAINS
   
-- Use NEST Desktop at https://ebrains.eu/service/nest-desktop
+- Use NEST Desktop at https://nest-desktop.apps.ebrains.eu
+- Requires EBRAINS account
 
 ### NEST Desktop on your own computer
 
